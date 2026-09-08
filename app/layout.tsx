@@ -14,18 +14,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://teplo-modular-sauna.mew-77.chatgpt.site'),
-  title: 'ТЕПЛО — модульные сауны под ключ',
-  description: 'Производим архитектурные модульные сауны и доставляем готовыми на ваш участок.',
+  title: 'ТЕПЛО — модульні сауни під ключ в Україні',
+  description: 'Виготовляємо архітектурні модульні сауни та доставляємо готовими на вашу ділянку по Україні.',
   openGraph: {
-    title: 'ТЕПЛО — модульные сауны под ключ',
-    description: 'Архитектурные сауны: производство, доставка и установка на вашем участке.',
+    title: 'ТЕПЛО — модульні сауни під ключ',
+    description: 'Виготовлення, доставка та монтаж сучасних модульних саун по Україні.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'ТЕПЛО — модульные сауны под ключ' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'ТЕПЛО — модульні сауни під ключ' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ТЕПЛО — модульные сауны под ключ',
-    description: 'Архитектурные сауны: производство, доставка и установка на вашем участке.',
+    title: 'ТЕПЛО — модульні сауни під ключ',
+    description: 'Виготовлення, доставка та монтаж сучасних модульних саун по Україні.',
     images: ['/og.png'],
   },
 };
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html lang="uk">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
