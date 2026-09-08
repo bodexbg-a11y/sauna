@@ -7,25 +7,25 @@ import {
 } from 'lucide-react';
 
 const models = [
-  { name: 'Карпати 12', area: '12 м²', people: 'до 4 осіб', price: 'від 790 000 ₴', image: '/images/sauna-exterior.jpg', tag: 'Бестселер', plan: 'Парна · душ · тамбур' },
-  { name: 'Полісся 18', area: '18 м²', people: 'до 6 осіб', price: 'від 1 090 000 ₴', image: '/images/sauna-panoramic.jpg', tag: 'Панорамна', plan: 'Парна · душ · lounge' },
-  { name: 'Терра 24', area: '24 м²', people: 'до 8 осіб', price: 'від 1 390 000 ₴', image: '/images/sauna-dark.jpg', tag: 'З терасою', plan: 'Парна · SPA · тераса' },
+  { name: 'Карпати 12', area: '12 м²', people: 'до 4 осіб', price: 'від 219 000 ₴', image: '/images/sauna-exterior.jpg', tag: 'Бестселер', plan: 'Парна · душ · тамбур' },
+  { name: 'Полісся 18', area: '18 м²', people: 'до 6 осіб', price: 'від 329 000 ₴', image: '/images/sauna-panoramic.jpg', tag: 'Панорамна', plan: 'Парна · душ · lounge' },
+  { name: 'Терра 24', area: '24 м²', people: 'до 8 осіб', price: 'від 429 000 ₴', image: '/images/sauna-dark.jpg', tag: 'З терасою', plan: 'Парна · SPA · тераса' },
 ];
 
 const sizes = [
-  { label: '12 м²', model: 'Карпати 12', price: 790000, people: '2–4' },
-  { label: '18 м²', model: 'Полісся 18', price: 1090000, people: '4–6' },
-  { label: '24 м²', model: 'Терра 24', price: 1390000, people: '6–8' },
+  { label: '12 м²', model: 'Карпати 12', price: 219000, people: '2–4' },
+  { label: '18 м²', model: 'Полісся 18', price: 329000, people: '4–6' },
+  { label: '24 м²', model: 'Терра 24', price: 429000, people: '6–8' },
 ];
 const finishes = [
   { label: 'Термоосика', price: 0 },
-  { label: 'Канадський кедр', price: 145000 },
-  { label: 'Темний абаш', price: 210000 },
+  { label: 'Канадський кедр', price: 24000 },
+  { label: 'Темний абаш', price: 39000 },
 ];
 const heaters = [
   { label: 'Harvia', price: 0 },
-  { label: 'HUUM Drop', price: 82000 },
-  { label: 'Дров’яна', price: 110000 },
+  { label: 'HUUM Drop', price: 22000 },
+  { label: 'Дров’яна', price: 29000 },
 ];
 
 const steps = [
@@ -190,6 +190,12 @@ export default function Home() {
             <div className="model-photo"><img src={model.image} alt={`Модульна сауна ${model.name}`} /><span>{model.tag}</span><div className="model-number">0{i + 1}</div><button onClick={() => { setSize(i); document.querySelector('#configurator')?.scrollIntoView(); }} aria-label={`Налаштувати ${model.name}`}><ArrowUpRight /></button></div>
             <div className="model-info"><div><h3>{model.name}</h3><p>{model.area} · {model.people}</p></div><div><strong>{model.price}</strong><p>{model.plan}</p></div></div>
           </article>)}
+        </div>
+        <div className="signature-tier shell" data-reveal>
+          <div><span>TEPLO / SIGNATURE</span><p>Індивідуальна архітектура</p></div>
+          <strong>від 1 000 000 ₴</strong>
+          <p>Унікальний проєкт без обмежень базової лінійки: персональна площа, фасад, SPA-сценарії та меблі на замовлення.</p>
+          <a href="#contact">Обговорити Signature <ArrowUpRight size={18} /></a>
         </div>
       </section>
 
